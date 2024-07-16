@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Negi's Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Arun Negi</h1>
+            <p>+91 7895-9698-08 | <a href="mailto:aroonnegi17@gmail.com">aroonnegi17@gmail.com</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+        </header>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>{{ about_me }}</p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>{{ experience }}</p>
+        </section>
+        <section id="project">
+            <h2>Project: Johnson & Johnson</h2>
+            <p>{{ project }}</p>
+        </section>
+        <section id="technical-skills">
+            <h2>Technical Skills</h2>
+            <p>{{ technical_skills }}</p>
+        </section>
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <p>{{ certifications }}</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p>{{ education }}</p>
+        </section>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
